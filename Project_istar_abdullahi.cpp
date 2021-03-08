@@ -51,14 +51,69 @@ int main()
 				//output asking for user input & storing it in a variable
 				cout << "\nPlease select from the options above: ";
 				cin >> choice;
+			
+				if(choice ==1)//check the choice
+				{
+					//calculating performance score based on input
+					perScore = ((5 * GPUSpeed) + (numCores * CPUSpeed)) * 1;
+				}else if(choice ==2)
+				{
+					//calculating performance score based on input
+					perScore = ((5 * GPUSpeed) + (numCores * CPUSpeed)) * .75;
+				}else if(choice == 3)
+				{
+					//calculating performance score based on input
+					perScore = ((5 * GPUSpeed) + (numCores * CPUSpeed)) * .55;
+				}else if (choice == 4)
+				{
+					//calculating performance score based on input
+					perScore = ((5 * GPUSpeed) + (numCores * CPUSpeed)) * .35;
+				}else
+				{
+					//sends error message if input is invalid
+					cout << "Invalid choice entered. Program will terminate.";
+				}
+				
+				if(perScore > 17000)// if more than 17,00, print ultra
+				{
+					cout << "\nRecommended Graphics Quality: Ultra";
+				}else if (perScore > 15000 )//if more than 15000, print high
+				{
+					cout << "\nRecommended Graphics Quality: High";
+				}else if (perScore > 13000 )//if more than 13,000, print medium
+				{
+					cout << "\nRecommended Graphics Quality: Medium";
+				}else if (perScore > 11000 )// if more than 11,000, print low
+				{
+					cout << "\nRecommended Graphics Quality: Low";
+				}else// if less than 11000, print unable to play
+				{
+					cout << "\nRecommended Graphics Quality: Unable to Play";
+				}	
+				
+				
+			}
+			else //sends error message if input is invalid
+			{
+				cout << "Invalid cores speed entered. Program will terminate.";
 			}
 		}
+		else//sends error message if input is invalid
+		{
+			cout << "Invalid processor speed entered. Program will terminate.";
+		}
 	}
-
+	else//sends error message if input is invalid
+	{
+		cout << "Invalid graphics card speed entered. Program will terminate.";
+	}
+	
+	
+	
 	return 0;
-
-
 }
+
+
 
 
 
