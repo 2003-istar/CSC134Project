@@ -17,7 +17,8 @@ int main()
 {
 	//initialize the variables
 	int choice;// users choice
-	double GPUSpeed, CPUSpeed, numCores, multi, perScore;// variables for the clock speed of the graphic card & processor
+	int GPUSpeed, CPUSpeed, numCores;// variables for the clock speed of the graphic card & processor
+	double multi, perScore;
 	//and the number of cores
 	
 	string recom = "\n\nComputer Hardware Graphics Quality Recommendation Tool\n\n";
