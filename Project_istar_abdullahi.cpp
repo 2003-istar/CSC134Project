@@ -67,7 +67,7 @@ int main()
 			//output asking for user input & storing it in a variable
 			cout << "\nPlease select from the options above: ";
 			cin >> choice;
-		}while ( choice < 0 || choice > 5);// validates the input and asks for input again if wrong.
+		}while ( choice < 0 || choice > 4);// validates the input and asks for input again if wrong.
 		
 		//Output
 		cout << "\n\nGPU Clock Speed: "<< GPUSpeed << " MHz";// print out the gpu clock speed
