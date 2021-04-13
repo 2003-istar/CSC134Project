@@ -37,7 +37,7 @@ int main()
 			//output asking for user input & storing it in a variable
 			cout << "Please enter the clock speed <in Megahertz> of your graphics card: ";
 			cin >> GPUSpeed;
-		}while(GPUSpeed < 0);// validates the input and asks for input again if wrong.
+		}while(GPUSpeed < 800 or GPUSpeed > 2000 );// validates the input and asks for input again if wrong.
 		
 		
 		do
@@ -45,14 +45,14 @@ int main()
 			//output asking for user input & storing it in a variable
 			cout << "Please enter the clock speed <in Megahertz> of your processor: ";
 			cin >> CPUSpeed;
-		}while(CPUSpeed < 0);// validates the input and asks for input again if wrong.
+		}while(CPUSpeed < 1000 or CPUSpeed > 5500);// validates the input and asks for input again if wrong.
 		
 		
 		do
 		{
 			cout << "Please enter the number of cores of your processor: ";
 			cin >> numCores;
-		}	while(numCores < 0);// validates the input and asks for input again if wrong.
+		}	while(numCores < 1 or numCores > 16);// validates the input and asks for input again if wrong.
 		
 	
 		//print monitor resolution options for user to choose from.
